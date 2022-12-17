@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+	margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+	background-image: linear-gradient(#0d924b, #9de495);
+    display: flex;
+	min-height: 122vh;
+    justify-content: center;
+    align-items: center;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+    color:orangered;
+}
+a:visited{
+    color:crimson;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    height: 122vh;
+    overflow: hidden;
+}
+
+.bubbles{
+    position: relative;
+    display: flex;
+}
+
+.bubbles span{
+    position: relative;
+    width: 70px;
+    height: 30px;
+    background: #f2ff7c;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #07d74944, 
+    0 0 50px #d4ff14,
+    0 0 100px #d4ff14;
+    animation: animate 10s linear infinite;
+    animation-duration: calc(50s / var(--i));
+}
+
+.bubbles span:nth-child(even){
+    background: #3cefef;
+    box-shadow: 0 0 0 10px #6dc7ff,
+    0 0 50px #4ae0f8,
+    0 0 100px #4ae0f8;
+}
+
+@keyframes animate{
+    0%{
+        transform: translateY(100vh) scale(0);
+    }
+    100%{
+        transform: translateY(-10vh) scale(1);
+    }
+}
+
+@keyframes color{
+    0%{color: orange;}
+    10%{color: purple;}
+    20%{color: red;}
+    30%{color: darkorchid;}
+    40%{color: darkgoldenrod;}
+    50%{color: coral;}
+    60%{color: indianred;}
+    70%{color: darkblue;}
+    80%{color: deeppink;}
+    90%{color: dodgerblue;}
+    100%{color: orange;}
+}
+
+.main{
+	background-color: rgb(239, 239, 239);
+	height: auto;
+	width: 650px;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	left: 50%;
+	top: 60%;
+}
+
+.left{
+	background-color: #269028;
+	width: 200px;
+	height: 100%;
+	float: left;
+}
+
+.right{
+	width: 450px;
+	float: left;
+}
+
+.profile{
+	height: 185px;
+	width: 185px;
+	border-radius: 50%;
+    margin-left: 60px;
+    margin-bottom: 20px;
+    border:2px solid #0d924b;
+    box-shadow: 0px 0px 60px #b3ff9b;
+}
+
+.profile img{
+    position: relative;
+    top: 0;
+    left: 0;
+	width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.box-1{
+	position: relative;
+}
+
+.heading{
+	background-color: #4d4d4d;
+	padding: 10px;
+	color: #25ff37;
+	text-align: left;
+	padding-left: 20px;
+	margin-right: -15px;
+}
+
+.heading::after{
+	content: '';
+	position: absolute;
+	width: 21px;
+	height: 18px;
+	background-color: #cdacac;
+	left: 191px;
+	top: 26px;
+	transform:rotate(56deg);
+	z-index: -1;
+}
+
+.p1{
+	padding: 9px 10px;
+	font-size: 10px;
+    animation: color 5s linear infinite;
+}
+
+.icons1{
+	font-size: 16px!important;
+	padding-right: 10px!important;
+	vertical-align: sub;
+}
+
+.skill-container{
+	width: 90%;
+	background-color: #4d4d4d;
+	margin: 0px 10px;
+}
+
+.skill{
+	text-align: right;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	color: white;
+}
+
+.html{
+	width: 60%;
+	background-color: rgb(241, 143, 143);
+}
+
+.css{
+	width: 60%;
+	background-color: rgb(119, 210, 255);
+}
+
+.java{
+	width: 30%;
+	background-color: rgb(174, 147, 255);
+}
+
+.python{
+	width: 40%;
+	background-color: rgb(255, 202, 111);
+}
+
+.s{
+    font-size: 12px;
+    padding: 9px 10px;
+    word-spacing: 1px;
+	letter-spacing: 0px;
+    color: white;
+}
+
+.icons2{
+	padding: 18px 10px;
+}
+
+.i-div{
+    animation: color 5s linear infinite;
+}
+
+.name-div{
+	padding: 30px 30px 30px 30px;
+	text-align: center;
+    align-items: center;
+	letter-spacing: 2px;
+    flex-direction: column;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #0d924b;
+}
+
+.name-div h1{
+	margin-bottom: 20px;
+    font-size: 25px;
+    animation: color 5s linear infinite;
+}
+
+.name-div p{
+    font-size: 15px;
+    animation: color 5s linear infinite;
+}
+
+.box-2{
+	padding: 0px 50px;
+	margin-top: 10px;
+}
+
+.p2{
+	font-size: 11px;
+	font-weight: 300;
+	letter-spacing: 1px;
+	word-spacing: 2px;
+	line-height: 18px;
+	margin-top: 5px;
+}
+
+h2{
+	font-size: 15px;
+	margin-bottom: 20px;
+    animation: color 5s linear infinite;
+}
+
+.icons3{
+	vertical-align: bottom;
+	font-size: 15px!important;
+	color: #4d4d4d;
+    animation: color 5s linear infinite;
+}
+
+.p3{
+	font-size: 13px;
+	word-spacing: 1px;
+	letter-spacing: 0px;
+	margin-top: 10px;
+}
+
+.p3 span{
+	color: #4ec770; padding-left: 20px;
+}
